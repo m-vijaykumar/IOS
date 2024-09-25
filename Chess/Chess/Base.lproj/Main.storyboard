@@ -1,0 +1,890 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8HC-zG-FoB">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--cfrgfc-->
+        <scene sceneID="zcU-r7-Y3p">
+            <objects>
+                <viewController title="cfrgfc" id="KEr-Eq-ORD" customClass="LibraryViewController" customModule="Chess" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fNg-ba-jBf">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="7n7-Js-0Oh">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="libraryCell" id="crF-2C-yir">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="crF-2C-yir" id="XIc-Yw-f40">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="KEr-Eq-ORD" id="1wK-6L-ODg"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aL9-qR-Mge"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7n7-Js-0Oh" firstAttribute="leading" secondItem="aL9-qR-Mge" secondAttribute="leading" id="LMg-p4-vdL"/>
+                            <constraint firstItem="7n7-Js-0Oh" firstAttribute="bottom" secondItem="aL9-qR-Mge" secondAttribute="bottom" id="TAl-Go-3I4"/>
+                            <constraint firstItem="7n7-Js-0Oh" firstAttribute="centerX" secondItem="fNg-ba-jBf" secondAttribute="centerX" id="Y61-bR-aRn"/>
+                            <constraint firstItem="7n7-Js-0Oh" firstAttribute="top" secondItem="aL9-qR-Mge" secondAttribute="top" id="xXA-gL-44c"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item98778" image="bell" catalog="system" id="Cyc-qm-LhI"/>
+                    <connections>
+                        <outlet property="libraryTable" destination="7n7-Js-0Oh" id="6xi-he-eUg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c3Q-JQ-OVU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="430" y="627"/>
+        </scene>
+        <!--BooksVC-->
+        <scene sceneID="Ziy-Zc-T6O">
+            <objects>
+                <viewController storyboardIdentifier="booksVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NqD-gX-MOu" customClass="BooksVC" customModule="Chess" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="evl-pd-KBY">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZPT-Ml-Sxx">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="bookCell" id="h96-Ba-FIb">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="h96-Ba-FIb" id="MPX-ao-kWh">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="NqD-gX-MOu" id="4rN-fL-apQ"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cFp-JU-Bkr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cFp-JU-Bkr" firstAttribute="bottom" secondItem="ZPT-Ml-Sxx" secondAttribute="bottom" id="WMu-w2-5lR"/>
+                            <constraint firstItem="ZPT-Ml-Sxx" firstAttribute="top" secondItem="cFp-JU-Bkr" secondAttribute="top" id="YzJ-ms-YRV"/>
+                            <constraint firstItem="ZPT-Ml-Sxx" firstAttribute="leading" secondItem="cFp-JU-Bkr" secondAttribute="leading" id="kFR-ua-eBw"/>
+                            <constraint firstItem="cFp-JU-Bkr" firstAttribute="trailing" secondItem="ZPT-Ml-Sxx" secondAttribute="trailing" id="xej-Pp-PmR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="booksTable" destination="ZPT-Ml-Sxx" id="3K5-a3-TDD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SoC-KD-RLq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1202" y="627"/>
+        </scene>
+        <!--Item223-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="viewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="Chess" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ACb-HC-PNg">
+                                <rect key="frame" x="0.0" y="203" width="393" height="466"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="m3u-MH-1GD">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="Zb2-7Z-Eq3">
+                                        <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="BXj-Gh-8fq">
+                                            <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Fsc-hb-rWh"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ACb-HC-PNg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Cwu-N2-EXv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ACb-HC-PNg" secondAttribute="trailing" id="R35-ds-3Al"/>
+                            <constraint firstItem="ACb-HC-PNg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="ve7-7c-Jmd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ACb-HC-PNg" secondAttribute="bottom" constant="100" id="yyX-hQ-eZc"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item223" image="paperplane.fill" catalog="system" id="DiQ-3k-1KE"/>
+                    <navigationItem key="navigationItem" id="nvG-Xe-zmF"/>
+                    <connections>
+                        <outlet property="collectionView" destination="ACb-HC-PNg" id="xej-ta-0hq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2790" y="-54"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="ofe-yi-14d">
+            <objects>
+                <viewController id="s2a-gC-zaw" customClass="PropertyViewController" customModule="Chess" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q3k-xt-lp6">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2R9-94-iDw">
+                                <rect key="frame" x="-4" y="-10" width="401" height="757"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nr7-Cp-baX">
+                                        <rect key="frame" x="20" y="359" width="361" height="128"/>
+                                        <subviews>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2nD-cl-yB7">
+                                                <rect key="frame" x="0.0" y="0.0" width="65" height="128"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="65" id="FAq-QR-jMO"/>
+                                                    <constraint firstAttribute="height" constant="128" id="H8I-cl-mhw"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="gray" image="checkmark.seal.fill" catalog="system" title=""/>
+                                            </button>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" allowsEditingTextAttributes="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JKm-ux-qyS">
+                                                <rect key="frame" x="65.000000000000028" y="0.0" width="224.99999999999997" height="128"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Become a Verified ">
+                                                        <attributes>
+                                                            <font key="NSFont" size="14" name="Helvetica-Bold"/>
+                                                            <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.3" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                <tabStops>
+                                                                    <textTab alignment="left" location="36">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="72">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="108">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="144">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="180">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="216">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="252">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="288">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="324">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="360">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="396">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="432">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                </tabStops>
+                                                            </paragraphStyle>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="U">
+                                                        <attributes>
+                                                            <font key="NSFont" size="12" name="Helvetica-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.3" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                <tabStops>
+                                                                    <textTab alignment="left" location="36">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="72">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="108">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="144">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="180">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="216">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="252">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="288">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="324">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="360">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="396">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="432">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                </tabStops>
+                                                            </paragraphStyle>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="ser">
+                                                        <attributes>
+                                                            <font key="NSFont" size="14" name="Helvetica-Bold"/>
+                                                            <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.3" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                <tabStops>
+                                                                    <textTab alignment="left" location="36">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="72">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="108">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="144">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="180">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="216">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="252">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="288">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="324">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="360">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="396">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="432">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                </tabStops>
+                                                            </paragraphStyle>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                        <attributes>
+                                                            <font key="NSFont" size="11" name="Helvetica"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.3" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                <tabStops>
+                                                                    <textTab alignment="left" location="36">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="72">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="108">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="144">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="180">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="216">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="252">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="288">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="324">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="360">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="396">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="432">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                </tabStops>
+                                                            </paragraphStyle>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content">Build Trust
+Get increased visibility
+Unlock Exclusive rewards
+
+</string>
+                                                        <attributes>
+                                                            <font key="NSFont" size="12" name="Helvetica"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.3" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                <tabStops>
+                                                                    <textTab alignment="left" location="36">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="72">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="108">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="144">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="180">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="216">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="252">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="288">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="324">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="360">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="396">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="432">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                </tabStops>
+                                                            </paragraphStyle>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="Get started">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.24563076358498415" green="0.3637216494140082" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="12" name="Helvetica"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.3" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                <tabStops>
+                                                                    <textTab alignment="left" location="36">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="72">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="108">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="144">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="180">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="216">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="252">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="288">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="324">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="360">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="396">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                    <textTab alignment="left" location="432">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                </tabStops>
+                                                            </paragraphStyle>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uw4-GE-IEL">
+                                                <rect key="frame" x="290" y="0.0" width="49" height="128"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="49" id="E4L-U6-J4k"/>
+                                                    <constraint firstAttribute="height" constant="128" id="amM-kd-44R"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="">
+                                                    <imageReference key="image" image="arrowshape.right.fill" catalog="system" symbolScale="medium"/>
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="JKm-ux-qyS" firstAttribute="leading" secondItem="2nD-cl-yB7" secondAttribute="trailing" id="696-dQ-412"/>
+                                            <constraint firstAttribute="trailing" secondItem="Uw4-GE-IEL" secondAttribute="trailing" constant="22" id="DPW-sw-YA7"/>
+                                            <constraint firstItem="2nD-cl-yB7" firstAttribute="top" secondItem="Nr7-Cp-baX" secondAttribute="top" id="H9k-uv-AiP"/>
+                                            <constraint firstItem="Uw4-GE-IEL" firstAttribute="leading" secondItem="JKm-ux-qyS" secondAttribute="trailing" id="bm1-BS-De0"/>
+                                            <constraint firstAttribute="height" constant="128" id="dZD-vN-Hfu"/>
+                                            <constraint firstItem="2nD-cl-yB7" firstAttribute="leading" secondItem="Nr7-Cp-baX" secondAttribute="leading" id="fhB-c3-3pl"/>
+                                            <constraint firstItem="2nD-cl-yB7" firstAttribute="top" secondItem="JKm-ux-qyS" secondAttribute="top" id="mCm-ay-5jj"/>
+                                            <constraint firstItem="2nD-cl-yB7" firstAttribute="bottom" secondItem="JKm-ux-qyS" secondAttribute="bottom" id="tde-VZ-cOS"/>
+                                            <constraint firstItem="2nD-cl-yB7" firstAttribute="baseline" secondItem="Uw4-GE-IEL" secondAttribute="baseline" id="vWu-db-ji7"/>
+                                        </constraints>
+                                    </view>
+                                    <searchBar contentMode="redraw" placeholder="Search property for Rent" translatesAutoresizingMaskIntoConstraints="NO" id="Si9-ZV-C6L">
+                                        <rect key="frame" x="20" y="-26" width="317" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="317" id="jmP-W3-nOP"/>
+                                        </constraints>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="s2a-gC-zaw" id="8ee-G1-PDI"/>
+                                        </connections>
+                                    </searchBar>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" canCancelContentTouches="NO" bouncesZoom="NO" dataMode="prototypes" id="NeO-Kg-rLq">
+                                        <rect key="frame" x="20" y="48" width="361" height="286"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UQV-UI-BeM">
+                                            <size key="itemSize" width="85" height="99"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="propertyCell" id="kpy-Fc-nEG" customClass="PropertyCell" customModule="Chess" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="97" height="104"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="dGj-H9-7a3">
+                                                    <rect key="frame" x="0.0" y="0.0" width="97" height="104"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="building" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="iqq-0p-4Kr">
+                                                            <rect key="frame" x="31" y="18.333333333333336" width="35" height="34.666666666666671"/>
+                                                            <color key="tintColor" red="0.91372549530000002" green="0.27843138579999999" blue="0.36470589040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="35" id="DxI-sV-6mV"/>
+                                                                <constraint firstAttribute="height" constant="35" id="He6-5k-L8y"/>
+                                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="rKq-ch-6Sb"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Labjjhjhvjhgvhgvghvgvhgvhgvhgel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUN-LU-kyB">
+                                                            <rect key="frame" x="15" y="55.999999999999993" width="67" height="28.666666666666664"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="gUN-LU-kyB" firstAttribute="leading" secondItem="dGj-H9-7a3" secondAttribute="leading" constant="15" id="A7f-Dq-pBK"/>
+                                                        <constraint firstItem="iqq-0p-4Kr" firstAttribute="centerX" secondItem="dGj-H9-7a3" secondAttribute="centerX" id="CC8-42-LLd"/>
+                                                        <constraint firstItem="gUN-LU-kyB" firstAttribute="top" secondItem="iqq-0p-4Kr" secondAttribute="bottom" constant="3" id="PmQ-E2-A6D"/>
+                                                        <constraint firstAttribute="trailing" secondItem="gUN-LU-kyB" secondAttribute="trailing" constant="15" id="fY7-9t-2TH"/>
+                                                        <constraint firstItem="iqq-0p-4Kr" firstAttribute="top" secondItem="dGj-H9-7a3" secondAttribute="top" constant="17.999999999999982" id="xiA-LP-byG"/>
+                                                    </constraints>
+                                                </collectionViewCellContentView>
+                                                <size key="customSize" width="97" height="104"/>
+                                                <connections>
+                                                    <outlet property="propertyImage" destination="iqq-0p-4Kr" id="8ql-nX-1rC"/>
+                                                    <outlet property="propertyLable" destination="gUN-LU-kyB" id="U4H-XU-ZxG"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
+                                        <connections>
+                                            <outlet property="dataSource" destination="s2a-gC-zaw" id="i52-tI-3q9"/>
+                                        </connections>
+                                    </collectionView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fC5-FM-ih3">
+                                        <rect key="frame" x="337" y="-17.666666666666668" width="44" height="36"/>
+                                        <color key="tintColor" systemColor="systemGrayColor"/>
+                                        <imageReference key="image" image="bell" catalog="system" symbolScale="small"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Uu-dW-gxc">
+                                        <rect key="frame" x="20" y="523" width="361" height="172"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgy-5v-2T3">
+                                                <rect key="frame" x="300" y="0.0" width="45" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="ynW-lz-WE4"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="">
+                                                    <imageReference key="image" image="arrowshape.right.fill" catalog="system" symbolScale="medium"/>
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Popular in Residiental for Rent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1b-M4-EQw">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="8Qm-Dg-ufH"/>
+                                                    <constraint firstAttribute="height" constant="30" id="als-uf-Mkt"/>
+                                                    <constraint firstAttribute="width" constant="300" id="mxT-fR-eeA"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="tz4-F0-AzH" customClass="Image">
+                                                <rect key="frame" x="3" y="36" width="342" height="128"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="BF8-kt-5IJ"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="342" id="BIU-6s-24R"/>
+                                                    <constraint firstAttribute="width" constant="342" id="g32-uQ-mgY"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="qub-wh-reL"/>
+                                                </constraints>
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Si5-U6-0iT">
+                                                    <size key="itemSize" width="128" height="128"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="imageCell" id="B6W-yQ-8Wd" customClass="ImageCollectionViewCell" customModule="Chess" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="kra-ap-y0A">
+                                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ybe-4n-SN8">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="128" id="aQo-aV-ES6"/>
+                                                                        <constraint firstAttribute="width" constant="128" id="iwL-cM-sxK"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="Ybe-4n-SN8" secondAttribute="trailing" id="2MA-2V-QgX"/>
+                                                                <constraint firstItem="Ybe-4n-SN8" firstAttribute="leading" secondItem="kra-ap-y0A" secondAttribute="leading" id="5gs-yB-cig"/>
+                                                                <constraint firstItem="Ybe-4n-SN8" firstAttribute="top" secondItem="kra-ap-y0A" secondAttribute="top" id="9RG-ye-pET"/>
+                                                                <constraint firstAttribute="bottom" secondItem="Ybe-4n-SN8" secondAttribute="bottom" id="VKz-4a-uWn"/>
+                                                                <constraint firstAttribute="trailing" secondItem="Ybe-4n-SN8" secondAttribute="trailing" id="lkS-9e-mWR"/>
+                                                                <constraint firstAttribute="bottom" secondItem="Ybe-4n-SN8" secondAttribute="bottom" id="nJl-3a-7ci"/>
+                                                                <constraint firstItem="Ybe-4n-SN8" firstAttribute="leading" secondItem="kra-ap-y0A" secondAttribute="leading" id="nRb-mw-As5"/>
+                                                                <constraint firstItem="Ybe-4n-SN8" firstAttribute="top" secondItem="kra-ap-y0A" secondAttribute="top" id="weq-vQ-Lai"/>
+                                                            </constraints>
+                                                        </collectionViewCellContentView>
+                                                        <connections>
+                                                            <outlet property="PropertyImage" destination="Ybe-4n-SN8" id="3XY-Ag-uUd"/>
+                                                        </connections>
+                                                    </collectionViewCell>
+                                                </cells>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="s2a-gC-zaw" id="lvC-o9-yGJ"/>
+                                                </connections>
+                                            </collectionView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="U1b-M4-EQw" firstAttribute="leading" secondItem="4Uu-dW-gxc" secondAttribute="leading" id="Ama-mO-xNw"/>
+                                            <constraint firstAttribute="trailing" secondItem="tz4-F0-AzH" secondAttribute="trailing" constant="16" id="BzZ-dS-qEF"/>
+                                            <constraint firstItem="tz4-F0-AzH" firstAttribute="leading" secondItem="4Uu-dW-gxc" secondAttribute="leading" constant="3" id="GKK-ta-wOi"/>
+                                            <constraint firstItem="U1b-M4-EQw" firstAttribute="top" secondItem="4Uu-dW-gxc" secondAttribute="top" id="Tsj-OZ-CGW"/>
+                                            <constraint firstAttribute="trailing" secondItem="fgy-5v-2T3" secondAttribute="trailing" constant="16" id="jvg-ay-3fn"/>
+                                            <constraint firstItem="tz4-F0-AzH" firstAttribute="top" secondItem="U1b-M4-EQw" secondAttribute="bottom" constant="6" id="jxN-lX-h28"/>
+                                            <constraint firstItem="tz4-F0-AzH" firstAttribute="bottom" secondItem="4Uu-dW-gxc" secondAttribute="bottomMargin" id="ncY-R7-noW"/>
+                                            <constraint firstItem="fgy-5v-2T3" firstAttribute="leading" secondItem="U1b-M4-EQw" secondAttribute="trailing" id="x98-0Z-cPY"/>
+                                            <constraint firstItem="fgy-5v-2T3" firstAttribute="top" secondItem="4Uu-dW-gxc" secondAttribute="top" id="y0Z-dr-fdN"/>
+                                            <constraint firstAttribute="height" constant="172" id="zla-Ei-hcE"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="4Uu-dW-gxc" firstAttribute="top" secondItem="Nr7-Cp-baX" secondAttribute="bottom" constant="36" id="0Rh-7K-ci6"/>
+                                    <constraint firstItem="Si9-ZV-C6L" firstAttribute="top" secondItem="KPM-Ng-vHN" secondAttribute="top" constant="9" id="0e7-Mb-s2z"/>
+                                    <constraint firstItem="KPM-Ng-vHN" firstAttribute="trailing" secondItem="4Uu-dW-gxc" secondAttribute="trailing" constant="20" id="2DD-Fr-wPo"/>
+                                    <constraint firstItem="NeO-Kg-rLq" firstAttribute="top" secondItem="fC5-FM-ih3" secondAttribute="bottom" constant="27.333333333333346" id="6ns-6U-MpF"/>
+                                    <constraint firstAttribute="bottom" secondItem="4Uu-dW-gxc" secondAttribute="bottom" constant="27" id="Avd-sS-UeF"/>
+                                    <constraint firstItem="Nr7-Cp-baX" firstAttribute="leading" secondItem="4Uu-dW-gxc" secondAttribute="leading" id="DJP-bT-AfI"/>
+                                    <constraint firstItem="Si9-ZV-C6L" firstAttribute="leading" secondItem="NeO-Kg-rLq" secondAttribute="leading" id="HaT-pa-qw7"/>
+                                    <constraint firstItem="Nr7-Cp-baX" firstAttribute="trailing" secondItem="NeO-Kg-rLq" secondAttribute="trailing" id="LEz-N7-m7d"/>
+                                    <constraint firstItem="fC5-FM-ih3" firstAttribute="top" secondItem="KPM-Ng-vHN" secondAttribute="top" constant="14.999999999999982" id="SZC-VZ-0e5"/>
+                                    <constraint firstItem="Nr7-Cp-baX" firstAttribute="leading" secondItem="NeO-Kg-rLq" secondAttribute="leading" id="Vcl-gn-Aqj"/>
+                                    <constraint firstItem="Si9-ZV-C6L" firstAttribute="top" secondItem="IAJ-K8-bzJ" secondAttribute="top" constant="-26" id="bO6-56-02A"/>
+                                    <constraint firstAttribute="trailing" secondItem="fC5-FM-ih3" secondAttribute="trailing" constant="20" id="djN-md-sxn"/>
+                                    <constraint firstItem="fC5-FM-ih3" firstAttribute="trailing" secondItem="NeO-Kg-rLq" secondAttribute="trailing" id="fgf-Rd-1Jj"/>
+                                    <constraint firstItem="fC5-FM-ih3" firstAttribute="leading" secondItem="Si9-ZV-C6L" secondAttribute="trailing" id="jOZ-ji-cqj"/>
+                                    <constraint firstItem="Nr7-Cp-baX" firstAttribute="top" secondItem="NeO-Kg-rLq" secondAttribute="bottom" constant="25" id="qfg-4s-QpN"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="IAJ-K8-bzJ"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="KPM-Ng-vHN"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="E6E-NC-G3C"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2R9-94-iDw" firstAttribute="top" secondItem="Q3k-xt-lp6" secondAttribute="topMargin" constant="-35" id="Olp-w0-yxP"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="2R9-94-iDw" secondAttribute="bottom" constant="-56" id="p9y-rf-onX"/>
+                            <constraint firstItem="2R9-94-iDw" firstAttribute="centerX" secondItem="Q3k-xt-lp6" secondAttribute="centerX" id="zv2-Qr-DS3"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="h8E-YE-3Qk">
+                        <imageReference key="image" image="doc.on.clipboard" catalog="system" symbolScale="default"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="collectionView" destination="NeO-Kg-rLq" id="Cux-6A-qCe"/>
+                        <outlet property="imageCollectionView" destination="tz4-F0-AzH" id="pQi-FZ-tYO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sea-Q0-btD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1917" y="-33"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="acX-A5-G8U">
+            <objects>
+                <viewController id="M9R-SI-0aN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="97m-c1-bX5">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="bR6-ny-98i">
+                                <rect key="frame" x="120" y="175" width="152" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="usM-BC-EC5"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login to Post an Ad" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gy-n6-NGr">
+                                <rect key="frame" x="88" y="337.33333333333331" width="217" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="R8a-8j-ZDj">
+                                <rect key="frame" x="25" y="387.33333333333326" width="343" height="263"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tpl-CA-LpK">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="62"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="google" title="Login With Google" imagePadding="30" buttonSize="large">
+                                            <backgroundConfiguration key="background">
+                                                <color key="strokeColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4Z-cf-B3k">
+                                        <rect key="frame" x="0.0" y="67" width="343" height="62"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="2"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" imagePlacement="leading" title="Login With Facebook" imagePadding="30" buttonSize="large">
+                                            <imageReference key="image" image="facebook" symbolScale="large" variableValue="1"/>
+                                            <backgroundConfiguration key="background">
+                                                <color key="strokeColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Mg-cn-DaM">
+                                        <rect key="frame" x="0.0" y="134.00000000000006" width="343" height="62"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" imagePlacement="leading" title="Login With Apple" imagePadding="30" buttonSize="large">
+                                            <imageReference key="image" image="apple" symbolScale="large" renderingMode="original" variableValue="1"/>
+                                            <backgroundConfiguration key="background">
+                                                <color key="strokeColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pnS-1G-upk">
+                                        <rect key="frame" x="0.0" y="201.00000000000006" width="343" height="62"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" imagePlacement="leading" title="Login With Apple" imagePadding="30" buttonSize="large">
+                                            <imageReference key="image" image="Image 1" symbolScale="large" variableValue="1"/>
+                                            <backgroundConfiguration key="background">
+                                                <color key="strokeColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="By Logging in i agree to Terms and condition and  Privacy Policy" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0oc-8s-UKX">
+                                <rect key="frame" x="25" y="708.33333333333337" width="343" height="60.666666666666629"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60.666666666666629" id="TA1-6L-KhM"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="Don't have an account? Create One" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hjw-To-vLO">
+                                <rect key="frame" x="60" y="670.33333333333337" width="273" height="33"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="3C7-KW-O8q"/>
+                                </constraints>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dubizzle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nXr-Xc-yhY">
+                                <rect key="frame" x="82" y="103" width="229" height="32.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TgC-7V-Cuk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="R8a-8j-ZDj" firstAttribute="leading" secondItem="0oc-8s-UKX" secondAttribute="leading" id="8U8-Ox-PEK"/>
+                            <constraint firstItem="0gy-n6-NGr" firstAttribute="top" secondItem="bR6-ny-98i" secondAttribute="bottom" constant="43" id="8fF-PU-Yg7"/>
+                            <constraint firstItem="R8a-8j-ZDj" firstAttribute="top" secondItem="0gy-n6-NGr" secondAttribute="bottom" constant="20" id="BdB-Zy-7NS"/>
+                            <constraint firstItem="hjw-To-vLO" firstAttribute="leading" secondItem="TgC-7V-Cuk" secondAttribute="leading" constant="60" id="BkU-GN-MOX"/>
+                            <constraint firstItem="nXr-Xc-yhY" firstAttribute="centerX" secondItem="bR6-ny-98i" secondAttribute="centerX" id="OBC-iI-PeZ"/>
+                            <constraint firstItem="bR6-ny-98i" firstAttribute="top" secondItem="nXr-Xc-yhY" secondAttribute="bottom" constant="39" id="PTd-Ob-XtZ"/>
+                            <constraint firstItem="bR6-ny-98i" firstAttribute="centerX" secondItem="0gy-n6-NGr" secondAttribute="centerX" id="PUM-4X-IaE"/>
+                            <constraint firstItem="bR6-ny-98i" firstAttribute="centerX" secondItem="97m-c1-bX5" secondAttribute="centerX" id="QJu-2o-yIW"/>
+                            <constraint firstItem="R8a-8j-ZDj" firstAttribute="leading" secondItem="TgC-7V-Cuk" secondAttribute="leading" constant="25" id="Sih-cS-cRd"/>
+                            <constraint firstItem="0oc-8s-UKX" firstAttribute="bottom" secondItem="TgC-7V-Cuk" secondAttribute="bottom" id="XQQ-hW-ih3"/>
+                            <constraint firstItem="hjw-To-vLO" firstAttribute="top" secondItem="R8a-8j-ZDj" secondAttribute="bottom" constant="20" id="fLm-cq-5I5"/>
+                            <constraint firstItem="hjw-To-vLO" firstAttribute="centerX" secondItem="0oc-8s-UKX" secondAttribute="centerX" id="fMZ-qP-CYh"/>
+                            <constraint firstItem="R8a-8j-ZDj" firstAttribute="trailing" secondItem="0oc-8s-UKX" secondAttribute="trailing" id="hzH-60-rEQ"/>
+                            <constraint firstItem="nXr-Xc-yhY" firstAttribute="leading" secondItem="TgC-7V-Cuk" secondAttribute="leading" constant="82" id="kNq-qU-mU5"/>
+                            <constraint firstItem="bR6-ny-98i" firstAttribute="leading" secondItem="TgC-7V-Cuk" secondAttribute="leading" constant="120" id="ked-IC-WQz"/>
+                            <constraint firstItem="0oc-8s-UKX" firstAttribute="top" secondItem="hjw-To-vLO" secondAttribute="bottom" constant="5" id="pyk-6S-nVf"/>
+                            <constraint firstItem="0gy-n6-NGr" firstAttribute="centerX" secondItem="R8a-8j-ZDj" secondAttribute="centerX" id="vWA-QP-Ey1"/>
+                            <constraint firstItem="nXr-Xc-yhY" firstAttribute="top" secondItem="TgC-7V-Cuk" secondAttribute="top" id="x86-7L-2tl"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" image="figure.wave.circle.fill" catalog="system" id="Yyq-dJ-Wmi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DwE-Pd-Mk7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1916.7938931297708" y="-716.19718309859161"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="PSK-Hr-qfw">
+            <objects>
+                <tabBarController id="1or-mE-82P" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="baJ-Za-L3Z"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XWv-n4-SMj">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.91372549530000002" green="0.27843138579999999" blue="0.36470589040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="M9R-SI-0aN" kind="relationship" relationship="viewControllers" id="gzZ-t7-OIS"/>
+                        <segue destination="s2a-gC-zaw" kind="relationship" relationship="viewControllers" id="eQC-eb-UL2"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="GBs-L4-fcS"/>
+                        <segue destination="KEr-Eq-ORD" kind="relationship" relationship="viewControllers" id="2D8-LY-JSg"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Za-Ul-3tJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="431" y="-217"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KeO-1P-8Qs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8HC-zG-FoB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ghQ-HS-Jf1">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1or-mE-82P" kind="relationship" relationship="rootViewController" id="4z0-lN-Ie4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ow2-TK-w6q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-618" y="-54"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="326" height="294"/>
+        <image name="Image 1" width="32" height="32"/>
+        <image name="apple" width="32" height="32"/>
+        <image name="arrowshape.right.fill" catalog="system" width="128" height="104"/>
+        <image name="bell" catalog="system" width="125" height="128"/>
+        <image name="building" catalog="system" width="110" height="128"/>
+        <image name="checkmark.seal.fill" catalog="system" width="128" height="124"/>
+        <image name="doc.on.clipboard" catalog="system" width="116" height="128"/>
+        <image name="facebook" width="32" height="32"/>
+        <image name="figure.wave.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="google" width="32" height="32"/>
+        <image name="paperplane.fill" catalog="system" width="128" height="119"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

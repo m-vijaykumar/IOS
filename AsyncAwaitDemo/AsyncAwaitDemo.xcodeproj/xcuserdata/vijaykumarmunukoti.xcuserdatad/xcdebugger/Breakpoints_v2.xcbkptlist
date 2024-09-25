@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "54D5D709-E12B-407F-AC01-8E205EA02566"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5D08E584-469F-4DDD-8BF5-949EA3A960CF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AsyncAwaitDemo/PostViewTable.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "init()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5D08E584-469F-4DDD-8BF5-949EA3A960CF - d469a6f834d73cd8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in AsyncAwaitDemo.PostViewTable.init() -&gt; AsyncAwaitDemo.PostViewTable"
+                  moduleName = "AsyncAwaitDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vijaykumarmunukoti/Documents/IOS/AsyncAwaitDemo/AsyncAwaitDemo/PostViewTable.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29">
+               </Location>
+               <Location
+                  uuid = "5D08E584-469F-4DDD-8BF5-949EA3A960CF - 80a535acbd5ebd25"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #1 @Sendable () async -&gt; () in AsyncAwaitDemo.PostViewTable.init() -&gt; AsyncAwaitDemo.PostViewTable"
+                  moduleName = "AsyncAwaitDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vijaykumarmunukoti/Documents/IOS/AsyncAwaitDemo/AsyncAwaitDemo/PostViewTable.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29">
+               </Location>
+               <Location
+                  uuid = "5D08E584-469F-4DDD-8BF5-949EA3A960CF - bf5203a6620478da"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in AsyncAwaitDemo.PostViewTable.init() -&gt; AsyncAwaitDemo.PostViewTable"
+                  moduleName = "AsyncAwaitDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vijaykumarmunukoti/Documents/IOS/AsyncAwaitDemo/AsyncAwaitDemo/PostViewTable.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29">
+               </Location>
+               <Location
+                  uuid = "5D08E584-469F-4DDD-8BF5-949EA3A960CF - aaaf4d05452d1adb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for closure #1 @Sendable () async -&gt; () in AsyncAwaitDemo.PostViewTable.init() -&gt; AsyncAwaitDemo.PostViewTable"
+                  moduleName = "AsyncAwaitDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vijaykumarmunukoti/Documents/IOS/AsyncAwaitDemo/AsyncAwaitDemo/PostViewTable.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
